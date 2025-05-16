@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="Images/icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/99c02f652f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="homeButton">
+            <a href="index.html" class="home-btn"></a>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li><a href="leaderboard.html" class="nav-link">Leaderboard</a></li>
+                <li><a href="login.html" class="nav-link">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-box">
+        <h1 class="signup">sign up</h1>
+        <form id="registrationForm">
+            <p>
+                <label for="name">name</label>
+                <br>
+                <input type="text" name="name" id="name"
+                class="input" placeholder="enter your name" autocomplete="on" maxlength="20" required autofocus>
+            </p>
+            <p>
+                <label for="email">email</label>
+                <br>
+                <input type="email" name="email" id="email" class="input" 
+                placeholder="enter your email" autocomplete="on" required>
+            </p>
+            <p>
+                <label for="username">username</label>
+                <br>
+                <input type="text" name="username" id="username" class="input"
+                placeholder="enter your username" autocomplete="on" required>
+            </p>
+            <p class="password-container">
+                <label for="password">password</label>
+                <br>
+                <input type="password" name="password" id="password" class="input"
+                placeholder="enter your password" autocomplete="on" required>
+                <i class="fa-solid fa-eye" id="show-password-register" style="cursor: pointer;"></i>
+            </p>
+            <button type="submit" class="signup-btn">sign up</button>
+        </form>
+        <p id="feedback"></p>
+    </div>
+
+    <script src="JS/main.js" defer></script>
+</body>
+</html>

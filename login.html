@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Log In Page</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="Images/icon.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/99c02f652f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="homeButton">
+            <a href="index.html" class="home-btn"></a>
+        </div>
+
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li><a href="leaderboard.html" class="nav-link">Leaderboard</a></li>
+                <li><a href="login.html" class="nav-link">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-box">
+        <h1 class="login">log in</h1>
+        <form id="loginForm">
+            <p>
+                <label for="username" class="username">username</label>
+                <br>
+                <input type="text" id="loginUsername" name="username" 
+                class="input" placeholder="enter username" autocomplete="on" required autofocus>
+            </p>
+
+            <p class="password-container">
+                <label for="password" class="up-texts">password</label>
+                <br>
+                <input type="password" id="loginPassword" name="password" class="input"
+                placeholder="enter password" autocomplete="on" required>
+                <i class="fa-solid fa-eye" id="show-password-login"></i>
+            </p>
+            <button type="submit" class="login-btn">log in</button>
+        </form>
+        <br>
+        <div>
+            <a href="forgotpass.html" class="forgot-pass">forgot password?</a>
+            <h2 class="register">not a user? <a href="registration.html" class="register">sign up</a>  </h2>
+        </div>
+        <br>
+        <p id="feedback"></p>
+    </div>
+
+    <script src="JS/main.js" defer></script>
+</body>
+</html>

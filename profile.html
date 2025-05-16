@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="Images/icon.png" type="image/x-icon">
+</head>
+<body>
+
+    <header class="header">
+        <div class="homeButton">
+            <a href="index.html" class="home-btn"></a>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li><a href="leaderboard.html" class="nav-link">Leaderboard</a></li>
+                <li><a href="howtoplay.html" class="nav-link">How to Play</a></li>
+                <li><a href="profile.html" class="nav-link">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-box">
+        <h1 class="profile">my profile</h1>
+        <div id="userProfile">
+            <p id="userName">Name: <span id="displayName"></span></p>
+            <p id="userUsername">Username: <span id="displayUsername"></span></p>
+            <p id="userLevel">Leaderboard Level: <span id="displayLevel"></span></p>
+        </div>
+        
+        
+        <button id="logoutButton" class="logout-btn">log out</button>
+        <br>
+        <button id="goHome" class="gohome-btn">go home</button>
+        
+    </div>
+    <script src="JS/main.js"></script>
+</body>
+</html>

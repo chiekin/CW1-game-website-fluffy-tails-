@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Game Page</title>
+
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="Images/icon.png">
+</head>
+<header class="header">
+    <div class="homeButton">
+        <a href="index.html" class="home-btn"></a>
+    </div>
+    <nav class="nav-bar">
+        <ul class="nav-list">
+            <li><a href="leaderboard.html" class="nav-link">Leaderboard</a></li>
+            <li><a href="howtoplay.html" class="nav-link">How to Play</a></li>
+            <li><a href="profile.html" class="nav-link">Profile</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <canvas id="canvas1"></canvas>
+    <audio id="background-music" src="BackgroundMusic/retro-game-music-245230.mp3" loop preload="auto"></audio>
+    <script type="module" src="JS/character.js"></script>
+    <script type="module" src="JS/game.js"></script>
+
+</body>
+</html>

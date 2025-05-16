@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'Sweethearts';
+    src: url(../Fonts/Sweethearts.ttf);
+}
+
+@font-face {
+    font-family: 'CheekyRabbit';
+    src: url(../Fonts/Cheeky\ Rabbit.ttf);
+}
+
+@font-face {
+    font-family: 'Sweethearts';
+    src: url(../Fonts/Sweethearts.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../Fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Carving Soft';
+    src: url(../Fonts/MADECarvingSoftPERSONALUSE-Light.otf);
+}
+
+@font-face {
+    font-family: 'Soulmeh';
+    src: url(../Fonts/Soulmeh.otf);
+}
+
+/* GAME CANVAS */
+#canvas1 {
+    width: 800px;
+    height: 500px;
+    border: 1px solid transparent;
+    background: #ffc8dd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+body {
+    background-image: url(../Images/backgroundimg.png);
+    background-size: cover;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.homeButton {
+    display: flex;
+    justify-content: start;
+}
+
+.home-btn {
+    background-image: url(../Images/homeicon1.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.home-btn:hover {
+    background-image: url(../Images/homeicon2.png);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px 20px;
+}
+
+.nav-list {
+    color: #fec3ca;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin-left: 20px;
+}
+
+.nav-link {
+    font-family: 'Sweethearts';
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #fda0ab;
+    color: #ffffff;
+}
+
+.logoImage {
+    display: block;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 0px;
+}
+
+.gameTitle {
+    font-family: 'Soulmeh';
+    text-align: center;
+    font-size: 60px;
+    color: #fec3ca;
+    margin: 0;
+    text-shadow: 3px 3px 0 white, 3px -3px 0 white, -3px 3px 0 white, -3px -3px 0 white, 3px 0px 0 white, 0px 3px 0 white, -3px 0px 0 white, 0px -3px 0 white;
+    letter-spacing: 5px;
+}
+
+.play-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    color: white;
+    font-family: 'Sweethearts';
+    letter-spacing: 4px;
+    padding: 8px 16px;
+    font-size: medium;
+    font-weight: bold;
+    background-color: #ffc39c;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 2px;
+}
+.play-btn:hover {
+    background-color: #ffb27f;
+}
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 500px;
+    height: auto;
+    padding: 20px 20px 40px 20px;
+    margin: 80px auto;
+    max-width: 90%;
+    align-items: center;
+
+    background-color: white;
+    outline-color: #fec3ca;
+    font-family: 'Sweethearts';
+    font-size: 20px;
+    color: #cdb4db;
+    letter-spacing: 2px;
+}
+
+.signup,
+.login,
+.reset-pass,
+.howtoplay,
+.profile, .leaderboard, #leaderboardTable th, .forgotPass
+ {
+    color: #fec3ca;
+    letter-spacing: 5px;
+}
+
+/*LEADERBOARD DESIGN*/
+#leaderboardTable, #howtoplay-txt {
+    font-family: 'Carving Soft';
+}
+
+#leaderboardTable th, #leaderboardTable td {
+    padding: 15px;
+}
+
+.login-btn, .signup-btn, .confirm-btn, .gohome-btn, .logout-btn, .goback-btn, .reset-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    border-color: white;
+    border-width: 2px;
+    padding: 8px 16px;
+    margin: 0 auto;
+
+    font-family: "Sweethearts";
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    background-color: #b0c4b1;
+} /* Button Design */
+
+.login-btn:hover,
+.signup-btn:hover,
+.confirm-btn:hover, .logout-btn:hover, .gohome-btn:hover, .reset-btn:hover {
+    background-color: #a5bca6;
+}
+
+.input {
+    padding: 5px 30px;
+    padding-right: 45px; 
+    line-height: 20px;
+    border-radius: 15px;
+    border: 2px solid #b0c4b1;
+    margin-top: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+#userProfile {
+    align-items: start;
+    font-family: 'Carving Soft';
+}
+
+.password-container {
+    position: relative;
+    width: 300px;
+}
+
+#loginForm input[type="password"], 
+#loginForm input[type="text"], 
+#registrationForm input[type="password"], 
+#registrationForm input[type="text"], 
+#registrationForm input[type="email"],
+#reset-password-form input[type="password"],
+#reset-password-form input[type="text"] {
+    width: 100%;
+    padding: 12px 36px 12px 12px;
+    box-sizing: border-box;
+    color: #fda0ab;
+    font-family: 'Carving Soft';
+    letter-spacing: 2.5px;
+    font-size: 15px;
+    outline-color: #ffb27f;
+} /*Input Design*/
+
+.fa-eye, .fa-eye-slash {
+    position: absolute;
+    top: 55%;
+    right: 4%;
+    cursor: pointer;
+    color: #cdb4db;
+}
+
+.forgot-pass, .register {
+    font-family: 'Carving Soft';
+    font-size: 15px;
+    color: #ffb27f;
+}
+
+/* Link Design */
+a {
+    color: #a5bca6;
+}
+
+a:active {
+    color: #ffb27f;
+}
+
+#feedback {
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: #fda0ab;
+    text-align: center;
+}
+
+#displayName, #displayUsername, #displayLevel {
+    color: #ffb27f;
+}
